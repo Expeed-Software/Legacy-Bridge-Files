@@ -1,0 +1,23 @@
+{
+  "id": "760c2900-3454-49ba-8491-9e22b402f3e3",
+  "name": "four points booking system",
+  "description": "four point hotel room booking system",
+  "outputFolder": "D:\\Hyatt Regency Kochi Room BookingSystem",
+  "minimumZ3Score": null,
+  "createdAt": "2026-04-20T11:11:54.3219377Z",
+  "updatedAt": "2026-04-20T11:11:54.3219389Z",
+  "stepStates": {
+    "parse": "available",
+    "analysis": "locked",
+    "prd": "locked",
+    "verification": "locked",
+    "ux": "locked",
+    "client-review": "locked",
+    "final-verify": "locked",
+    "tech-stack": "locked",
+    "spec-files": "locked"
+  },
+  "stepArtifacts": {},
+  "techStack": null,
+  "sourceStack": null
+}
