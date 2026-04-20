@@ -1,0 +1,23 @@
+{
+  "id": "b58cac77-b23b-4f36-94e9-36a5b8e40fe2",
+  "name": "regency booking",
+  "description": "sbooking",
+  "outputFolder": "D:\\Hyatt Regency Kochi Room BookingSystem\\noel reg",
+  "minimumZ3Score": null,
+  "createdAt": "2026-04-20T15:24:37.5266462Z",
+  "updatedAt": "2026-04-20T15:24:37.5266477Z",
+  "stepStates": {
+    "parse": "available",
+    "analysis": "locked",
+    "prd": "locked",
+    "verification": "locked",
+    "ux": "locked",
+    "client-review": "locked",
+    "final-verify": "locked",
+    "tech-stack": "locked",
+    "spec-files": "locked"
+  },
+  "stepArtifacts": {},
+  "techStack": null,
+  "sourceStack": null
+}
