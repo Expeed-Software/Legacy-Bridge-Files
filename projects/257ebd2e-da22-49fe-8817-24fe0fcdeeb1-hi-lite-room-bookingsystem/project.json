@@ -1,0 +1,23 @@
+{
+  "id": "257ebd2e-da22-49fe-8817-24fe0fcdeeb1",
+  "name": "HI lite Room BookingSystem",
+  "description": "hi booking system",
+  "outputFolder": "D:\\Hyatt Regency Kochi Room BookingSystem",
+  "minimumZ3Score": null,
+  "createdAt": "2026-04-20T10:30:42.054235Z",
+  "updatedAt": "2026-04-20T10:30:42.0542358Z",
+  "stepStates": {
+    "parse": "available",
+    "analysis": "locked",
+    "prd": "locked",
+    "verification": "locked",
+    "ux": "locked",
+    "client-review": "locked",
+    "final-verify": "locked",
+    "tech-stack": "locked",
+    "spec-files": "locked"
+  },
+  "stepArtifacts": {},
+  "techStack": null,
+  "sourceStack": null
+}
