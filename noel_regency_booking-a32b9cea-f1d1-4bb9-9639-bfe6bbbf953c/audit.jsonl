@@ -27,3 +27,10 @@
 {"ts":"2026-04-20T11:48:05.6017062Z","step":"analysis","level":"info","msg":"User proceeded to PRD generation","meta":null}
 {"ts":"2026-04-20T11:48:07.5378263Z","step":"analysis","level":"info","msg":"User proceeded to PRD generation","meta":null}
 {"ts":"2026-04-20T12:17:44.0721878Z","step":"analysis","level":"info","msg":"Analysis started","meta":null}
+{"ts":"2026-04-20T12:17:44.4480503Z","step":"analysis","level":"info","msg":"deadCode pass complete \u2014 142 findings","meta":null}
+{"ts":"2026-04-20T12:17:44.4560557Z","step":"analysis","level":"info","msg":"dbInjectionRisk pass complete \u2014 0 findings","meta":null}
+{"ts":"2026-04-20T12:17:44.4670204Z","step":"analysis","level":"info","msg":"totalPaths pass complete \u2014 325 findings","meta":null}
+{"ts":"2026-04-20T12:17:44.4802165Z","step":"analysis","level":"info","msg":"edgeCases pass complete \u2014 181 findings","meta":null}
+{"ts":"2026-04-20T12:17:44.4907372Z","step":"analysis","level":"info","msg":"ghostLogic pass complete \u2014 0 findings","meta":null}
+{"ts":"2026-04-20T12:17:44.5074623Z","step":"analysis","level":"info","msg":"Analysis complete \u2014 1 files analysed","meta":null}
+{"ts":"2026-04-20T12:27:19.7188512Z","step":"analysis","level":"info","msg":"Analysis started","meta":null}
