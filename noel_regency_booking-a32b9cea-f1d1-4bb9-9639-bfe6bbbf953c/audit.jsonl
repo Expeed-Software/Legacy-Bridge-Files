@@ -17,3 +17,10 @@
 {"ts":"2026-04-20T11:47:29.7327580Z","step":"analysis","level":"info","msg":"edgeCases pass complete \u2014 181 findings","meta":null}
 {"ts":"2026-04-20T11:47:29.7526868Z","step":"analysis","level":"info","msg":"ghostLogic pass complete \u2014 0 findings","meta":null}
 {"ts":"2026-04-20T11:47:29.7691778Z","step":"analysis","level":"info","msg":"Analysis complete \u2014 1 files analysed","meta":null}
+{"ts":"2026-04-20T11:47:36.7440003Z","step":"analysis","level":"info","msg":"Analysis started","meta":null}
+{"ts":"2026-04-20T11:47:37.0875467Z","step":"analysis","level":"info","msg":"deadCode pass complete \u2014 142 findings","meta":null}
+{"ts":"2026-04-20T11:47:37.0900066Z","step":"analysis","level":"info","msg":"dbInjectionRisk pass complete \u2014 0 findings","meta":null}
+{"ts":"2026-04-20T11:47:37.0947921Z","step":"analysis","level":"info","msg":"totalPaths pass complete \u2014 325 findings","meta":null}
+{"ts":"2026-04-20T11:47:37.1011827Z","step":"analysis","level":"info","msg":"edgeCases pass complete \u2014 181 findings","meta":null}
+{"ts":"2026-04-20T11:47:37.1054341Z","step":"analysis","level":"info","msg":"ghostLogic pass complete \u2014 0 findings","meta":null}
+{"ts":"2026-04-20T11:47:37.1086138Z","step":"analysis","level":"info","msg":"Analysis complete \u2014 1 files analysed","meta":null}
