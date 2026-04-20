@@ -5,11 +5,11 @@
   "outputFolder": "D:\\Hyatt Regency Kochi Room BookingSystem\\noel reg",
   "minimumZ3Score": null,
   "createdAt": "2026-04-20T11:46:27.3929877Z",
-  "updatedAt": "2026-04-20T11:47:36.7438954Z",
+  "updatedAt": "2026-04-20T11:48:05.5997411Z",
   "stepStates": {
     "parse": "completed",
-    "analysis": "in-progress",
-    "prd": "locked",
+    "analysis": "completed",
+    "prd": "available",
     "verification": "locked",
     "ux": "locked",
     "client-review": "locked",
@@ -33,6 +33,13 @@
         "type": "crystal_reports",
         "path": "C:\\LegacyBridgeData\\noel_regency_booking-a32b9cea-f1d1-4bb9-9639-bfe6bbbf953c\\parse\\reports_uast_v1.json",
         "createdAt": "2026-04-20T11:47:29.1432178Z"
+      }
+    ],
+    "analysis": [
+      {
+        "type": "uast_analysis",
+        "path": "D:\\Hyatt Regency Kochi Room BookingSystem\\noel reg\\steps\\analysis\\UAST_analysis.json",
+        "createdAt": "2026-04-20T11:48:05.599729Z"
       }
     ]
   },
