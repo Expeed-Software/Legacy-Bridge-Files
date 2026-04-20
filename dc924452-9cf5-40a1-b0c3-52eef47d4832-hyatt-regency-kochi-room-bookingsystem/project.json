@@ -1,0 +1,23 @@
+{
+  "id": "dc924452-9cf5-40a1-b0c3-52eef47d4832",
+  "name": "Hyatt Regency Kochi Room BookingSystem",
+  "description": "Hyatt Regency Kochi Room BookingSystem",
+  "outputFolder": "D:\\Hyatt Regency Kochi Room BookingSystem",
+  "minimumZ3Score": null,
+  "createdAt": "2026-04-20T10:22:21.2694267Z",
+  "updatedAt": "2026-04-20T10:22:21.2694752Z",
+  "stepStates": {
+    "parse": "available",
+    "analysis": "locked",
+    "prd": "locked",
+    "verification": "locked",
+    "ux": "locked",
+    "client-review": "locked",
+    "final-verify": "locked",
+    "tech-stack": "locked",
+    "spec-files": "locked"
+  },
+  "stepArtifacts": {},
+  "techStack": null,
+  "sourceStack": null
+}

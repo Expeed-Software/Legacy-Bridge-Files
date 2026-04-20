@@ -1,0 +1,23 @@
+{
+  "id": "49e2cb06-b005-4d04-b778-da938a0646bf",
+  "name": "Dream Regency Room BookingSystem",
+  "description": "Dream Regency Room BookingSystem",
+  "outputFolder": "D:\\Hyatt Regency Kochi Room BookingSystem",
+  "minimumZ3Score": null,
+  "createdAt": "2026-04-20T10:27:11.078285Z",
+  "updatedAt": "2026-04-20T10:27:11.0782858Z",
+  "stepStates": {
+    "parse": "available",
+    "analysis": "locked",
+    "prd": "locked",
+    "verification": "locked",
+    "ux": "locked",
+    "client-review": "locked",
+    "final-verify": "locked",
+    "tech-stack": "locked",
+    "spec-files": "locked"
+  },
+  "stepArtifacts": {},
+  "techStack": null,
+  "sourceStack": null
+}
