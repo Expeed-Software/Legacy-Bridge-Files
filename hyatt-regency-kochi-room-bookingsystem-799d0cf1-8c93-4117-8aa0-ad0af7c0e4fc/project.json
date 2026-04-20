@@ -1,0 +1,41 @@
+{
+  "id": "799d0cf1-8c93-4117-8aa0-ad0af7c0e4fc",
+  "name": "Hyatt Regency Kochi Room BookingSystem",
+  "description": "booking system",
+  "outputFolder": "D:\\Hyatt Regency Kochi Room BookingSystem",
+  "minimumZ3Score": null,
+  "createdAt": "2026-04-20T09:49:22.6462531Z",
+  "updatedAt": "2026-04-20T09:51:22.1353739Z",
+  "stepStates": {
+    "parse": "completed",
+    "analysis": "in-progress",
+    "prd": "locked",
+    "verification": "locked",
+    "ux": "locked",
+    "client-review": "locked",
+    "final-verify": "locked",
+    "tech-stack": "locked",
+    "spec-files": "locked"
+  },
+  "stepArtifacts": {
+    "parse": [
+      {
+        "type": "uast",
+        "path": "D:\\Hyatt Regency Kochi Room BookingSystem\\project_uast_20260420_0950.json",
+        "createdAt": "2026-04-20T09:51:21.9613015Z"
+      },
+      {
+        "type": "db_schema",
+        "path": "D:\\Hyatt Regency Kochi Room BookingSystem\\database_uast_20260420_0950.json",
+        "createdAt": "2026-04-20T09:51:21.9613015Z"
+      },
+      {
+        "type": "crystal_reports",
+        "path": "D:\\Hyatt Regency Kochi Room BookingSystem\\reports_uast_20260420_0950.json",
+        "createdAt": "2026-04-20T09:51:21.9613015Z"
+      }
+    ]
+  },
+  "techStack": null,
+  "sourceStack": null
+}

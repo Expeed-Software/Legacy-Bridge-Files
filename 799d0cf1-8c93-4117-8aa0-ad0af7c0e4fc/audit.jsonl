@@ -1,0 +1,19 @@
+{"ts":"2026-04-20T09:49:22.6790833Z","step":"project","level":"info","msg":"Project created","meta":null}
+{"ts":"2026-04-20T09:50:59.7587649Z","step":"parse","level":"info","msg":"[Project 799d0cf1-8c93-4117-8aa0-ad0af7c0e4fc] Starting parse pipeline...","meta":null}
+{"ts":"2026-04-20T09:50:59.7597247Z","step":"parse","level":"info","msg":"Loading source files...","meta":null}
+{"ts":"2026-04-20T09:51:06.6951241Z","step":"parse","level":"info","msg":"Parsing VB6 source files...","meta":null}
+{"ts":"2026-04-20T09:51:17.4299192Z","step":"parse","level":"info","msg":"Parsed 23 VB6 declarations.","meta":null}
+{"ts":"2026-04-20T09:51:17.4305977Z","step":"parse","level":"info","msg":"Extracting access schema...","meta":null}
+{"ts":"2026-04-20T09:51:21.8352734Z","step":"parse","level":"info","msg":"Extracted 12 database objects.","meta":null}
+{"ts":"2026-04-20T09:51:21.8361521Z","step":"parse","level":"info","msg":"Scanning for Crystal Reports (.rpt) files...","meta":null}
+{"ts":"2026-04-20T09:51:21.8969227Z","step":"parse","level":"info","msg":"Found 15 Crystal Reports.","meta":null}
+{"ts":"2026-04-20T09:51:21.8973871Z","step":"parse","level":"info","msg":"Converting to Babelfish UAST...","meta":null}
+{"ts":"2026-04-20T09:51:21.9038187Z","step":"parse","level":"info","msg":"Writing output files to D:\\Hyatt Regency Kochi Room BookingSystem...","meta":null}
+{"ts":"2026-04-20T09:51:21.9422261Z","step":"parse","level":"info","msg":"Parse completed successfully.","meta":null}
+{"ts":"2026-04-20T09:51:22.1389914Z","step":"analysis","level":"info","msg":"Analysis started","meta":null}
+{"ts":"2026-04-20T09:51:22.4933075Z","step":"analysis","level":"info","msg":"deadCode pass complete \u2014 142 findings","meta":null}
+{"ts":"2026-04-20T09:51:22.4997331Z","step":"analysis","level":"info","msg":"dbInjectionRisk pass complete \u2014 0 findings","meta":null}
+{"ts":"2026-04-20T09:51:22.5105780Z","step":"analysis","level":"info","msg":"totalPaths pass complete \u2014 325 findings","meta":null}
+{"ts":"2026-04-20T09:51:22.5282415Z","step":"analysis","level":"info","msg":"edgeCases pass complete \u2014 181 findings","meta":null}
+{"ts":"2026-04-20T09:51:22.5563936Z","step":"analysis","level":"info","msg":"ghostLogic pass complete \u2014 0 findings","meta":null}
+{"ts":"2026-04-20T09:51:22.5677539Z","step":"analysis","level":"info","msg":"Analysis complete \u2014 1 files analysed","meta":null}
