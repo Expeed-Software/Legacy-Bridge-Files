@@ -5,7 +5,7 @@
   "outputFolder": "D:\\Hyatt Regency Kochi Room BookingSystem\\noel reg",
   "minimumZ3Score": null,
   "createdAt": "2026-04-20T11:46:27.3929877Z",
-  "updatedAt": "2026-04-20T12:33:08.7901756Z",
+  "updatedAt": "2026-04-20T12:39:59.3871156Z",
   "stepStates": {
     "parse": "completed",
     "analysis": "in-progress",
@@ -15,7 +15,7 @@
     "client-review": "available",
     "final-verify": "available",
     "tech-stack": "completed",
-    "spec-files": "in-progress"
+    "spec-files": "completed"
   },
   "stepArtifacts": {
     "parse": [
@@ -47,6 +47,43 @@
         "type": "prd",
         "path": "C:\\LegacyBridgeData\\noel_regency_booking-a32b9cea-f1d1-4bb9-9639-bfe6bbbf953c\\prd\\PRD_v1.md",
         "createdAt": "2026-04-20T11:51:16.7732948Z"
+      }
+    ],
+    "spec-files": [
+      {
+        "type": "md_spec",
+        "path": "C:\\LegacyBridgeData\\noel_regency_booking-a32b9cea-f1d1-4bb9-9639-bfe6bbbf953c\\spec-files\\PROJECT_OVERVIEW.md",
+        "createdAt": "2026-04-20T12:39:59.3870628Z"
+      },
+      {
+        "type": "md_spec",
+        "path": "C:\\LegacyBridgeData\\noel_regency_booking-a32b9cea-f1d1-4bb9-9639-bfe6bbbf953c\\spec-files\\DATA_MODEL.md",
+        "createdAt": "2026-04-20T12:39:59.3870644Z"
+      },
+      {
+        "type": "md_spec",
+        "path": "C:\\LegacyBridgeData\\noel_regency_booking-a32b9cea-f1d1-4bb9-9639-bfe6bbbf953c\\spec-files\\API_SPEC.md",
+        "createdAt": "2026-04-20T12:39:59.3870647Z"
+      },
+      {
+        "type": "md_spec",
+        "path": "C:\\LegacyBridgeData\\noel_regency_booking-a32b9cea-f1d1-4bb9-9639-bfe6bbbf953c\\spec-files\\FRONTEND_SPEC.md",
+        "createdAt": "2026-04-20T12:39:59.3870653Z"
+      },
+      {
+        "type": "md_spec",
+        "path": "C:\\LegacyBridgeData\\noel_regency_booking-a32b9cea-f1d1-4bb9-9639-bfe6bbbf953c\\spec-files\\ARCHITECTURE.md",
+        "createdAt": "2026-04-20T12:39:59.3870658Z"
+      },
+      {
+        "type": "md_spec",
+        "path": "C:\\LegacyBridgeData\\noel_regency_booking-a32b9cea-f1d1-4bb9-9639-bfe6bbbf953c\\spec-files\\STANDARDS.md",
+        "createdAt": "2026-04-20T12:39:59.387066Z"
+      },
+      {
+        "type": "md_spec",
+        "path": "C:\\LegacyBridgeData\\noel_regency_booking-a32b9cea-f1d1-4bb9-9639-bfe6bbbf953c\\spec-files\\IMPLEMENTATION_PLAN.md",
+        "createdAt": "2026-04-20T12:39:59.3870664Z"
       }
     ]
   },
