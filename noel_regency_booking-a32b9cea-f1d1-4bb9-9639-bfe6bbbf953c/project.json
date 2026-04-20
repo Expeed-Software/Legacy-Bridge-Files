@@ -1,92 +1,92 @@
-{
-  "id": "a32b9cea-f1d1-4bb9-9639-bfe6bbbf953c",
-  "name": "noel regency booking",
-  "description": "regency booking system",
-  "outputFolder": "D:\\Hyatt Regency Kochi Room BookingSystem\\noel reg",
-  "minimumZ3Score": null,
-  "createdAt": "2026-04-20T11:46:27.3929877Z",
-  "updatedAt": "2026-04-20T12:57:25.739064Z",
-  "stepStates": {
-    "parse": "completed",
-    "analysis": "in-progress",
-    "prd": "completed",
-    "verification": "available",
-    "ux": "available",
-    "client-review": "available",
-    "final-verify": "available",
-    "tech-stack": "completed",
-    "spec-files": "completed"
-  },
-  "stepArtifacts": {
-    "parse": [
-      {
-        "type": "uast",
-        "path": "C:\\LegacyBridgeData\\noel_regency_booking-a32b9cea-f1d1-4bb9-9639-bfe6bbbf953c\\parse\\project_uast_v1.json",
-        "createdAt": "2026-04-20T11:47:29.1432178Z"
-      },
-      {
-        "type": "db_schema",
-        "path": "C:\\LegacyBridgeData\\noel_regency_booking-a32b9cea-f1d1-4bb9-9639-bfe6bbbf953c\\parse\\database_uast_v1.json",
-        "createdAt": "2026-04-20T11:47:29.1432178Z"
-      },
-      {
-        "type": "crystal_reports",
-        "path": "C:\\LegacyBridgeData\\noel_regency_booking-a32b9cea-f1d1-4bb9-9639-bfe6bbbf953c\\parse\\reports_uast_v1.json",
-        "createdAt": "2026-04-20T11:47:29.1432178Z"
-      }
-    ],
-    "analysis": [
-      {
-        "type": "uast_analysis",
-        "path": "D:\\Hyatt Regency Kochi Room BookingSystem\\noel reg\\steps\\analysis\\UAST_analysis.json",
-        "createdAt": "2026-04-20T11:48:07.535942Z"
-      }
-    ],
-    "prd": [
-      {
-        "type": "prd",
-        "path": "C:\\LegacyBridgeData\\noel_regency_booking-a32b9cea-f1d1-4bb9-9639-bfe6bbbf953c\\prd\\PRD_v1.md",
-        "createdAt": "2026-04-20T11:51:16.7732948Z"
-      }
-    ],
-    "spec-files": [
-      {
-        "type": "md_spec",
-        "path": "C:\\LegacyBridgeData\\noel_regency_booking-a32b9cea-f1d1-4bb9-9639-bfe6bbbf953c\\spec-files\\PROJECT_OVERVIEW.md",
-        "createdAt": "2026-04-20T12:39:59.3870628Z"
-      },
-      {
-        "type": "md_spec",
-        "path": "C:\\LegacyBridgeData\\noel_regency_booking-a32b9cea-f1d1-4bb9-9639-bfe6bbbf953c\\spec-files\\DATA_MODEL.md",
-        "createdAt": "2026-04-20T12:39:59.3870644Z"
-      },
-      {
-        "type": "md_spec",
-        "path": "C:\\LegacyBridgeData\\noel_regency_booking-a32b9cea-f1d1-4bb9-9639-bfe6bbbf953c\\spec-files\\API_SPEC.md",
-        "createdAt": "2026-04-20T12:39:59.3870647Z"
-      },
-      {
-        "type": "md_spec",
-        "path": "C:\\LegacyBridgeData\\noel_regency_booking-a32b9cea-f1d1-4bb9-9639-bfe6bbbf953c\\spec-files\\FRONTEND_SPEC.md",
-        "createdAt": "2026-04-20T12:39:59.3870653Z"
-      },
-      {
-        "type": "md_spec",
-        "path": "C:\\LegacyBridgeData\\noel_regency_booking-a32b9cea-f1d1-4bb9-9639-bfe6bbbf953c\\spec-files\\ARCHITECTURE.md",
-        "createdAt": "2026-04-20T12:39:59.3870658Z"
-      },
-      {
-        "type": "md_spec",
-        "path": "C:\\LegacyBridgeData\\noel_regency_booking-a32b9cea-f1d1-4bb9-9639-bfe6bbbf953c\\spec-files\\STANDARDS.md",
-        "createdAt": "2026-04-20T12:39:59.387066Z"
-      },
-      {
-        "type": "md_spec",
-        "path": "C:\\LegacyBridgeData\\noel_regency_booking-a32b9cea-f1d1-4bb9-9639-bfe6bbbf953c\\spec-files\\IMPLEMENTATION_PLAN.md",
-        "createdAt": "2026-04-20T12:39:59.3870664Z"
-      }
-    ]
-  },
-  "techStack": "react-nodejs-postgresql",
-  "sourceStack": null
+﻿{
+    "id":  "a32b9cea-f1d1-4bb9-9639-bfe6bbbf953c",
+    "name":  "noel regency booking",
+    "description":  "regency booking system",
+    "outputFolder":  "D:\\Hyatt Regency Kochi Room BookingSystem\\noel reg",
+    "minimumZ3Score":  null,
+    "createdAt":  "2026-04-20T11:46:27.3929877Z",
+    "updatedAt":  "2026-04-20T12:57:38.2663108Z",
+    "stepStates":  {
+                       "parse":  "completed",
+                       "analysis":  "completed",
+                       "prd":  "completed",
+                       "verification":  "available",
+                       "ux":  "available",
+                       "client-review":  "available",
+                       "final-verify":  "available",
+                       "tech-stack":  "completed",
+                       "spec-files":  "available"
+                   },
+    "stepArtifacts":  {
+                          "parse":  [
+                                        {
+                                            "type":  "uast",
+                                            "path":  "C:\\LegacyBridgeData\\noel_regency_booking-a32b9cea-f1d1-4bb9-9639-bfe6bbbf953c\\parse\\project_uast_v1.json",
+                                            "createdAt":  "2026-04-20T11:47:29.1432178Z"
+                                        },
+                                        {
+                                            "type":  "db_schema",
+                                            "path":  "C:\\LegacyBridgeData\\noel_regency_booking-a32b9cea-f1d1-4bb9-9639-bfe6bbbf953c\\parse\\database_uast_v1.json",
+                                            "createdAt":  "2026-04-20T11:47:29.1432178Z"
+                                        },
+                                        {
+                                            "type":  "crystal_reports",
+                                            "path":  "C:\\LegacyBridgeData\\noel_regency_booking-a32b9cea-f1d1-4bb9-9639-bfe6bbbf953c\\parse\\reports_uast_v1.json",
+                                            "createdAt":  "2026-04-20T11:47:29.1432178Z"
+                                        }
+                                    ],
+                          "analysis":  [
+                                           {
+                                               "type":  "uast_analysis",
+                                               "path":  "D:\\Hyatt Regency Kochi Room BookingSystem\\noel reg\\steps\\analysis\\UAST_analysis.json",
+                                               "createdAt":  "2026-04-20T11:48:07.535942Z"
+                                           }
+                                       ],
+                          "prd":  [
+                                      {
+                                          "type":  "prd",
+                                          "path":  "C:\\LegacyBridgeData\\noel_regency_booking-a32b9cea-f1d1-4bb9-9639-bfe6bbbf953c\\prd\\PRD_v1.md",
+                                          "createdAt":  "2026-04-20T11:51:16.7732948Z"
+                                      }
+                                  ],
+                          "spec-files":  [
+                                             {
+                                                 "type":  "md_spec",
+                                                 "path":  "C:\\LegacyBridgeData\\noel_regency_booking-a32b9cea-f1d1-4bb9-9639-bfe6bbbf953c\\spec-files\\PROJECT_OVERVIEW.md",
+                                                 "createdAt":  "2026-04-20T12:39:59.3870628Z"
+                                             },
+                                             {
+                                                 "type":  "md_spec",
+                                                 "path":  "C:\\LegacyBridgeData\\noel_regency_booking-a32b9cea-f1d1-4bb9-9639-bfe6bbbf953c\\spec-files\\DATA_MODEL.md",
+                                                 "createdAt":  "2026-04-20T12:39:59.3870644Z"
+                                             },
+                                             {
+                                                 "type":  "md_spec",
+                                                 "path":  "C:\\LegacyBridgeData\\noel_regency_booking-a32b9cea-f1d1-4bb9-9639-bfe6bbbf953c\\spec-files\\API_SPEC.md",
+                                                 "createdAt":  "2026-04-20T12:39:59.3870647Z"
+                                             },
+                                             {
+                                                 "type":  "md_spec",
+                                                 "path":  "C:\\LegacyBridgeData\\noel_regency_booking-a32b9cea-f1d1-4bb9-9639-bfe6bbbf953c\\spec-files\\FRONTEND_SPEC.md",
+                                                 "createdAt":  "2026-04-20T12:39:59.3870653Z"
+                                             },
+                                             {
+                                                 "type":  "md_spec",
+                                                 "path":  "C:\\LegacyBridgeData\\noel_regency_booking-a32b9cea-f1d1-4bb9-9639-bfe6bbbf953c\\spec-files\\ARCHITECTURE.md",
+                                                 "createdAt":  "2026-04-20T12:39:59.3870658Z"
+                                             },
+                                             {
+                                                 "type":  "md_spec",
+                                                 "path":  "C:\\LegacyBridgeData\\noel_regency_booking-a32b9cea-f1d1-4bb9-9639-bfe6bbbf953c\\spec-files\\STANDARDS.md",
+                                                 "createdAt":  "2026-04-20T12:39:59.387066Z"
+                                             },
+                                             {
+                                                 "type":  "md_spec",
+                                                 "path":  "C:\\LegacyBridgeData\\noel_regency_booking-a32b9cea-f1d1-4bb9-9639-bfe6bbbf953c\\spec-files\\IMPLEMENTATION_PLAN.md",
+                                                 "createdAt":  "2026-04-20T12:39:59.3870664Z"
+                                             }
+                                         ]
+                      },
+    "techStack":  "react-nodejs-postgresql",
+    "sourceStack":  null
 }
