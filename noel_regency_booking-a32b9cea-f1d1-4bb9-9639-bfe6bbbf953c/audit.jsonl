@@ -58,3 +58,10 @@
 {"ts":"2026-04-20T12:39:33.1359957Z","step":"spec-files","level":"info","msg":"IMPLEMENTATION_PLAN.md generated successfully","meta":null}
 {"ts":"2026-04-20T12:39:33.1362315Z","step":"spec-files","level":"info","msg":"All 7 MD files generated successfully","meta":null}
 {"ts":"2026-04-20T12:57:15.9707214Z","step":"analysis","level":"info","msg":"Analysis started","meta":null}
+{"ts":"2026-04-20T12:57:16.3883428Z","step":"analysis","level":"info","msg":"deadCode pass complete \u2014 142 findings","meta":null}
+{"ts":"2026-04-20T12:57:16.4024986Z","step":"analysis","level":"info","msg":"dbInjectionRisk pass complete \u2014 0 findings","meta":null}
+{"ts":"2026-04-20T12:57:16.4207208Z","step":"analysis","level":"info","msg":"totalPaths pass complete \u2014 325 findings","meta":null}
+{"ts":"2026-04-20T12:57:16.4546119Z","step":"analysis","level":"info","msg":"edgeCases pass complete \u2014 181 findings","meta":null}
+{"ts":"2026-04-20T12:57:16.4878494Z","step":"analysis","level":"info","msg":"ghostLogic pass complete \u2014 0 findings","meta":null}
+{"ts":"2026-04-20T12:57:16.5026342Z","step":"analysis","level":"info","msg":"Analysis complete \u2014 1 files analysed","meta":null}
+{"ts":"2026-04-20T12:57:22.4338065Z","step":"analysis","level":"info","msg":"Analysis started","meta":null}
