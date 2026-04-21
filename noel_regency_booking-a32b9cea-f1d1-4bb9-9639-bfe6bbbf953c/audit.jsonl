@@ -110,3 +110,4 @@
 {"ts":"2026-04-21T09:07:45.5470300Z","step":"parse","level":"info","msg":"Converting to Babelfish UAST...","meta":null}
 {"ts":"2026-04-21T09:07:45.5598988Z","step":"parse","level":"info","msg":"Writing output files to D:\\PROJECT REPORT...","meta":null}
 {"ts":"2026-04-21T09:07:45.6071709Z","step":"parse","level":"info","msg":"Parse completed successfully.","meta":null}
+{"ts":"2026-04-21T09:07:45.8015838Z","step":"analysis","level":"info","msg":"Analysis started","meta":null}
