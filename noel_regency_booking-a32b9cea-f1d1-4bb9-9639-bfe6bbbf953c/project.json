@@ -5,10 +5,10 @@
   "outputFolder": "D:\\Hyatt Regency Kochi Room BookingSystem\\noel reg",
   "minimumZ3Score": null,
   "createdAt": "2026-04-20T11:46:27.3929877Z",
-  "updatedAt": "2026-04-21T07:17:50.6267175Z",
+  "updatedAt": "2026-04-21T09:07:45.6436184Z",
   "stepStates": {
     "parse": "completed",
-    "analysis": "completed",
+    "analysis": "available",
     "prd": "completed",
     "verification": "available",
     "ux": "completed",
@@ -22,17 +22,17 @@
       {
         "type": "uast",
         "path": "C:\\LegacyBridgeData\\noel_regency_booking-a32b9cea-f1d1-4bb9-9639-bfe6bbbf953c\\parse\\project_uast_v1.json",
-        "createdAt": "2026-04-20T11:47:29.1432178Z"
+        "createdAt": "2026-04-21T09:07:45.6316319Z"
       },
       {
         "type": "db_schema",
         "path": "C:\\LegacyBridgeData\\noel_regency_booking-a32b9cea-f1d1-4bb9-9639-bfe6bbbf953c\\parse\\database_uast_v1.json",
-        "createdAt": "2026-04-20T11:47:29.1432178Z"
+        "createdAt": "2026-04-21T09:07:45.6316319Z"
       },
       {
         "type": "crystal_reports",
         "path": "C:\\LegacyBridgeData\\noel_regency_booking-a32b9cea-f1d1-4bb9-9639-bfe6bbbf953c\\parse\\reports_uast_v1.json",
-        "createdAt": "2026-04-20T11:47:29.1432178Z"
+        "createdAt": "2026-04-21T09:07:45.6316319Z"
       }
     ],
     "analysis": [

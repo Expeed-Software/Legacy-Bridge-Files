@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Customer Search & History | Hotel Booking System</title>
+<style>
+  body { background: #F5F8FB; font-family:'Segoe UI', Arial, sans-serif; color:#28384A; margin:0; }
+  .navbar { background:#17456B; color:#fff; font-weight:600; padding:0 0 0 26px; height:54px; display:flex; align-items:center; }
+  .main-content { max-width:1020px; margin:35px auto 0 auto; background:#fff; border-radius:8px; box-shadow:0 2px 9px #D8E3F630; padding:36px 38px 32px 38px; }
+  .section-title { font-size:1.28rem; font-weight:700; color:#17456B; margin-bottom:21px; letter-spacing:0.8px; }
+  .search-bar { display:flex; flex-wrap:wrap; gap:28px; margin-bottom:26px; }
+  .search-bar label { font-size:.96rem; color:#5A89B0; font-weight:500; margin-bottom:2px; }
+  .search-bar input[type="text"] {
+    width: 170px; padding:7px 10px; border: 1px solid #C7D5EA; border-radius:5px; font-size:1rem; background:#F5F8FB;
+    outline:none;transition:border 0.18s; font-family:'Segoe UI', Arial, sans-serif;
+  }
+  .search-bar input:focus { border-color:#2176AE; }
+  .search-actions { display:flex; flex-direction:column; justify-content:flex-end; }
+  .primary-btn, .secondary-btn {
+    padding:9px 26px; font-size:.99rem; font-weight:600; border-radius:5px; border:none; cursor:pointer; letter-spacing:0.7px; margin-right:7px; margin-bottom:4px;
+  }
+  .primary-btn { background:#2176AE; color:#fff; }
+  .primary-btn:hover { background:#17456B; }
+  .secondary-btn { background:#E1ECFF; color:#2176AE; }
+  .secondary-btn:hover { background:#D2EBFF; }
+  .split-columns {display:flex;gap:34px;margin-top:20px;}
+  .customer-list, .booking-history {background:#F5F8FB; border-radius:7px; padding:17px 18px; flex:1 1 300px; }
+  .customer-list-title, .booking-history-title {font-weight:600; font-size:1.09rem; color:#2176AE;margin-bottom:4px; letter-spacing:.2px;}
+  .customers-table, .history-table {width:100%; border-collapse:collapse; margin-top:8px; font-size:.98rem;}
+  .customers-table th, .history-table th { background:#E1ECFF; text-align:left; font-weight:600; color:#17456B; padding:8px 7px; border-bottom:1px solid #D1E3F8; }
+  .customers-table td, .history-table td { padding:7px 7px; border-bottom:1px solid #E7EFF9; }
+  .customers-table tr.selected, .customers-table tr.selected:hover {background:#D2EBFF !important;}
+  .customers-table tr:hover, .history-table tr:hover {background:#E9F4FC; cursor:pointer;}
+  .history-table tr.paid td {color:#2C8261;}
+  .history-table tr.unpaid td {color:#C71F37;}
+  .actions-row { margin-top: 19px; }
+  @media (max-width:900px) {
+    .split-columns {flex-direction:column;gap:9px;}
+    .main-content {padding: 18px 3vw;}
+    .search-bar {gap: 13px;}
+    .customer-list, .booking-history {min-width:0;}
+  }
+</style>
+</head>
+<body>
+<div class="navbar">Hotel Booking System</div>
+<div class="main-content">
+  <div class="section-title">Customer Search &amp; History</div>
+  <form class="search-bar" autocomplete="off">
+    <div>
+      <label for="searchName">Guest Name</label>
+      <input type="text" id="searchName" name="searchName" placeholder="e.g. Anna Chan">
+    </div>
+    <div>
+      <label for="searchPassport">Passport No.</label>
+      <input type="text" id="searchPassport" name="searchPassport" placeholder="e.g. KQ0212342">
+    </div>
+    <div>
+      <label for="searchContact">Contact No.</label>
+      <input type="text" id="searchContact" name="searchContact" placeholder="e.g. +852 9000 0000">
+    </div>
+    <div>
+      <label for="searchOrigin">Origin</label>
+      <input type="text" id="searchOrigin" name="searchOrigin" placeholder="e.g. China">
+    </div>
+    <div class="search-actions">
+      <button class="primary-btn" type="submit">Search</button>
+      <button class="secondary-btn" type="button" onclick="resetSearch()">Clear</button>
+    </div>
+  </form>
+  <div class="split-columns">
+    <div class="customer-list">
+      <div class="customer-list-title">Results</div>
+      <table class="customers-table">
+        <thead>
+        <tr>
+          <th>Name</th>
+          <th>Passport</th>
+          <th>Contact</th>
+          <th>Origin</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="selected">
+          <td>Jack Li</td>
+          <td>KQ0224628</td>
+          <td>+852 9123 2377</td>
+          <td>China</td>
+        </tr>
+        <tr>
+          <td>Susan Wong</td>
+          <td>HKP001230</td>
+          <td>+852 9788 9089</td>
+          <td>Hong Kong</td>
+        </tr>
+        <tr>
+          <td>Anna Mak</td>
+          <td>SG5490021</td>
+          <td>+65 8211 2011</td>
+          <td>Singapore</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="booking-history">
+      <div class="booking-history-title">Booking History: <span style="color:#2176AE">Jack Li</span></div>
+      <table class="history-table">
+        <thead>
+        <tr>
+          <th>Booking #</th>
+          <th>Room</th>
+          <th>Check-in</th>
+          <th>Check-out</th>
+          <th>Status</th>
+          <th>Payment</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="paid">
+          <td>4147</td>
+          <td>210</td>
+          <td>2026-06-12</td>
+          <td>2026-06-14</td>
+          <td>Booked</td>
+          <td>$1,000.00</td>
+        </tr>
+        <tr class="unpaid">
+          <td>3722</td>
+          <td>305</td>
+          <td>2026-01-15</td>
+          <td>2026-01-19</td>
+          <td>No Show</td>
+          <td>$0.00</td>
+        </tr>
+        <tr class="paid">
+          <td>3601</td>
+          <td>101</td>
+          <td>2025-08-01</td>
+          <td>2025-08-02</td>
+          <td>Checked Out</td>
+          <td>$800.00</td>
+        </tr>
+        </tbody>
+      </table>
+      <div class="actions-row">
+        <button class="primary-btn">Export History</button>
+        <button class="secondary-btn">Print</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  function resetSearch() {
+    document.getElementById('searchName').value = '';
+    document.getElementById('searchPassport').value = '';
+    document.getElementById('searchContact').value = '';
+    document.getElementById('searchOrigin').value = '';
+  }
+</script>
+</body>
+</html>

@@ -92,3 +92,21 @@
 {"ts":"2026-04-21T07:15:31.2153920Z","step":"ux","level":"info","msg":"Generating UI_DESIGN_SYSTEM.md","meta":null}
 {"ts":"2026-04-21T07:17:16.7887330Z","step":"ux","level":"info","msg":"UI_DESIGN_SYSTEM.md saved","meta":null}
 {"ts":"2026-04-21T07:17:16.7906999Z","step":"ux","level":"info","msg":"UX Phase 1 complete","meta":null}
+{"ts":"2026-04-21T08:39:05.6347109Z","step":"ux","level":"info","msg":"Mockup generation started","meta":null}
+{"ts":"2026-04-21T08:40:48.2714776Z","step":"ux","level":"info","msg":"Saved screen-1-login.html","meta":null}
+{"ts":"2026-04-21T08:40:48.2822142Z","step":"ux","level":"info","msg":"Saved screen-2-dashboard.html","meta":null}
+{"ts":"2026-04-21T08:40:48.2850951Z","step":"ux","level":"info","msg":"Saved screen-3-booking-management.html","meta":null}
+{"ts":"2026-04-21T08:40:48.2869200Z","step":"ux","level":"info","msg":"Saved screen-4-customer-search.html","meta":null}
+{"ts":"2026-04-21T08:40:48.2933951Z","step":"ux","level":"info","msg":"Saved screen-5-room-management.html","meta":null}
+{"ts":"2026-04-21T08:40:48.2960043Z","step":"ux","level":"info","msg":"Mockup generation complete","meta":null}
+{"ts":"2026-04-21T09:07:31.5833327Z","step":"parse","level":"info","msg":"[Project a32b9cea-f1d1-4bb9-9639-bfe6bbbf953c] Starting parse pipeline...","meta":null}
+{"ts":"2026-04-21T09:07:31.5847304Z","step":"parse","level":"info","msg":"Loading source files...","meta":null}
+{"ts":"2026-04-21T09:07:31.8358733Z","step":"parse","level":"info","msg":"Parsing VB6 source files...","meta":null}
+{"ts":"2026-04-21T09:07:41.5863394Z","step":"parse","level":"info","msg":"Parsed 23 VB6 declarations.","meta":null}
+{"ts":"2026-04-21T09:07:41.5876316Z","step":"parse","level":"info","msg":"Extracting access schema...","meta":null}
+{"ts":"2026-04-21T09:07:45.2752301Z","step":"parse","level":"info","msg":"Extracted 12 database objects.","meta":null}
+{"ts":"2026-04-21T09:07:45.2767679Z","step":"parse","level":"info","msg":"Scanning for Crystal Reports (.rpt) files...","meta":null}
+{"ts":"2026-04-21T09:07:45.5461146Z","step":"parse","level":"info","msg":"Found 15 Crystal Reports.","meta":null}
+{"ts":"2026-04-21T09:07:45.5470300Z","step":"parse","level":"info","msg":"Converting to Babelfish UAST...","meta":null}
+{"ts":"2026-04-21T09:07:45.5598988Z","step":"parse","level":"info","msg":"Writing output files to D:\\PROJECT REPORT...","meta":null}
+{"ts":"2026-04-21T09:07:45.6071709Z","step":"parse","level":"info","msg":"Parse completed successfully.","meta":null}

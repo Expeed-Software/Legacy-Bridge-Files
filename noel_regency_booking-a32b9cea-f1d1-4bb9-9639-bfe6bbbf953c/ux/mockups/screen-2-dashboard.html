@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard | Hotel Booking System</title>
+<style>
+  body {
+    background: #F5F8FB;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #28384A;
+    margin: 0;
+  }
+  .navbar {
+    background: #17456B;
+    color: #fff;
+    padding: 0 0 0 26px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 6px #17456B20;
+  }
+  .navbar-title {
+    font-size: 1.17rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  .navbar-user {
+    margin-right: 32px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #D1E3F8;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+  .main-content {
+    padding: 32px 4vw 24px 4vw;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  .dashboard-header {
+    font-size: 2.03rem;
+    font-weight: 700;
+    color: #17456B;
+    margin-bottom: 12px;
+    letter-spacing: 1.5px;
+  }
+  .summary-bar {
+    display: flex;
+    gap: 36px;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+  }
+  .summary-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px #C7D5EA45;
+    padding: 18px 26px 18px 24px;
+    min-width: 165px;
+    text-align: left;
+  }
+  .summary-count {
+    font-size: 2.10rem;
+    font-weight: 700;
+    color: #2176AE;
+    margin-bottom: 9px;
+  }
+  .summary-label {
+    color: #8CA9C9;
+    font-size: 1.05rem;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+  }
+  .room-status-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.25vw;
+    margin-bottom: 38px;
+  }
+  .room-tile {
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 1px 4px #D8E3F6;
+    padding: 18px 18px 16px 18px;
+    width: 163px;
+    margin-bottom: 11px;
+    position: relative;
+    cursor: pointer;
+    transition: box-shadow 0.15s;
+  }
+  .room-tile:hover {
+    box-shadow: 0 1px 12px #2176AE50;
+  }
+  .room-id {
+    font-weight: 700;
+    font-size: 1.07rem;
+    color: #17456B;
+    margin-bottom: 7px;
+  }
+  .room-type {
+    font-size: 0.99rem;
+    color: #8CA9C9;
+    margin-bottom: 7px;
+  }
+  .room-status-label {
+    display: inline-block;
+    padding: 3px 12px 3px 12px;
+    border-radius: 5px;
+    font-size: 0.97rem;
+    font-weight: 600;
+  }
+  .status-free { background: #CCF7DF; color: #2C8261; }
+  .status-occupied { background: #FFDFE1; color: #C71F37; }
+  .status-housekeeping { background: #FDEDC7; color: #B99115; }
+  .status-maintenance { background: #E1ECFF; color: #2176AE; }
+  .room-location {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    font-size: 0.93rem;
+    color: #9CB9DB;
+  }
+  .alerts-panel {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 10px #E2F0FB40;
+    padding: 18px 28px 18px 24px;
+    margin-bottom: 22px;
+    min-height: 62px;
+    max-width: 620px;
+  }
+  .alert-title {
+    font-size: 1.07rem;
+    font-weight: 600;
+    color: #C71F37;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+  .alert-list {
+    margin: 0;
+    padding-left: 18px;
+    color: #B83444;
+    font-size: 1rem;
+  }
+  @media (max-width: 900px) {
+    .room-status-grid {
+      gap: 2vw;
+    }
+    .room-tile {
+      width: 45vw;
+      min-width: 130px;
+    }
+    .summary-bar { flex-wrap: wrap; }
+  }
+</style>
+</head>
+<body>
+  <div class="navbar">
+    <span class="navbar-title">Hotel Booking System</span>
+    <div class="navbar-user">
+      <span>Welcome, John Smith</span>
+      <span style="color:#C7D5EA; opacity:0.78; font-size:1.05rem;">Manager</span>
+      <img src="https://i.ibb.co/qck7vKM/user-icon.png" alt="User Icon" style="width:26px;height:26px;border-radius:50%; background:#F5F8FB; border:1px solid #D8E3F6;">
+    </div>
+  </div>
+  <div class="main-content">
+    <div class="dashboard-header">Dashboard</div>
+    <div class="summary-bar">
+      <div class="summary-card">
+        <div class="summary-count">31</div>
+        <div class="summary-label">Total Rooms</div>
+      </div>
+      <div class="summary-card">
+        <div class="summary-count" style="color:#2C8261;">14</div>
+        <div class="summary-label">Free</div>
+      </div>
+      <div class="summary-card">
+        <div class="summary-count" style="color:#C71F37;">13</div>
+        <div class="summary-label">Occupied</div>
+      </div>
+      <div class="summary-card">
+        <div class="summary-count" style="color:#B99115;">2</div>
+        <div class="summary-label">Housekeeping</div>
+      </div>
+      <div class="summary-card">
+        <div class="summary-count" style="color:#2176AE;">2</div>
+        <div class="summary-label">Maintenance</div>
+      </div>
+    </div>
+    <div class="alerts-panel">
+      <div class="alert-title">
+        <svg width="18" height="18" fill="#C71F37" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#FFDFE1"/><path d="M12 8v4m0 4h.01" stroke="#C71F37" stroke-width="2" stroke-linecap="round"/></svg>
+        Booking Alerts
+      </div>
+      <ul class="alert-list">
+        <li>Room 210 - Pending payment for booking #4147 (Jack Li)</li>
+        <li>Room 307 - Overdue check-out (Susan Wong)</li>
+      </ul>
+    </div>
+    <div class="room-status-grid">
+      <div class="room-tile">
+        <div class="room-id">Room 101</div>
+        <div class="room-type">Deluxe</div>
+        <span class="room-status-label status-free">Free</span>
+        <div class="room-location">2/F East</div>
+      </div>
+      <div class="room-tile">
+        <div class="room-id">Room 102</div>
+        <div class="room-type">Deluxe</div>
+        <span class="room-status-label status-occupied">Occupied</span>
+        <div class="room-location">2/F East</div>
+      </div>
+      <div class="room-tile">
+        <div class="room-id">Room 202</div>
+        <div class="room-type">Suite</div>
+        <span class="room-status-label status-housekeeping">Housekeeping</span>
+        <div class="room-location">3/F Main</div>
+      </div>
+      <div class="room-tile">
+        <div class="room-id">Room 305</div>
+        <div class="room-type">Standard</div>
+        <span class="room-status-label status-maintenance">Maintenance</span>
+        <div class="room-location">3/F North</div>
+      </div>
+      <div class="room-tile">
+        <div class="room-id">Room 104</div>
+        <div class="room-type">Deluxe</div>
+        <span class="room-status-label status-free">Free</span>
+        <div class="room-location">2/F East</div>
+      </div>
+      <div class="room-tile">
+        <div class="room-id">Room 210</div>
+        <div class="room-type">Standard</div>
+        <span class="room-status-label status-occupied">Occupied</span>
+        <div class="room-location">3/F South</div>
+      </div>
+      <div class="room-tile">
+        <div class="room-id">Room 402</div>
+        <div class="room-type">Suite</div>
+        <span class="room-status-label status-free">Free</span>
+        <div class="room-location">4/F Main</div>
+      </div>
+      <div class="room-tile">
+        <div class="room-id">Room 307</div>
+        <div class="room-type">Standard</div>
+        <span class="room-status-label status-occupied">Occupied</span>
+        <div class="room-location">3/F North</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

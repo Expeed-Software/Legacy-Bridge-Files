@@ -1,7 +1,7 @@
 {
   "schema": "babelfish-uast-v1",
   "source_language": "SQL",
-  "generated_at": "2026-04-20T11:47:29.0709009Z",
+  "generated_at": "2026-04-21T09:07:45.5583152Z",
   "nodes": [
     {
       "@type": "TableDeclaration",

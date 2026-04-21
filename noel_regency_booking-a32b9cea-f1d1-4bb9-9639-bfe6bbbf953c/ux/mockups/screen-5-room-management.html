@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Room Management | Hotel Booking System</title>
+<style>
+  body { background: #F5F8FB; font-family:'Segoe UI', Arial, sans-serif; color:#28384A; margin:0; }
+  .navbar { background:#17456B; color:#fff; font-weight:600; padding-left:28px; height:54px; display:flex; align-items:center; }
+  .main-content { max-width:960px; margin:35px auto 0 auto; background:#fff; border-radius:8px; box-shadow:0 2px 12px #D8E3F649; padding:36px 46px 32px 44px; }
+  .section-title { font-size:1.24rem; font-weight:700; color:#17456B; margin-bottom:16px; letter-spacing:1px; }
+  .split-2 { display:flex; gap:32px; }
+  .room-list {
+    flex:1 1 410px; background:#F5F8FB; border-radius:7px; padding:14px 17px 18px 17px; min-width:270px; overflow-y:auto; max-height:395px;
+  }
+  .room-list-title { font-weight:600; font-size:1.07rem; color:#2176AE; margin-bottom:4px; }
+  .room-table { width:100%; border-collapse:collapse; margin-top:9px; font-size:.98rem; }
+  .room-table th { background:#E1ECFF; color:#17456B; padding:8px 7px; border-bottom:1px solid #D1E3F8; font-weight:600; text-align:left; }
+  .room-table td { padding:7px 7px; border-bottom:1px solid #E7EFF9; }
+  .room-table tr.selected, .room-table tr.selected:hover { background:#D2EBFF !important; }
+  .room-table tr:hover { background:#E9F4FC; cursor:pointer; }
+  .room-table .status-free {color:#2C8261;font-weight:500;}
+  .room-table .status-occupied {color:#C71F37;font-weight:600;}
+  .room-table .status-housekeeping {color:#B99115;font-weight:600;}
+  .room-table .status-maintenance {color:#2176AE;font-weight:500;}
+  .room-detail-form { flex:1 1 300px; min-width:320px; padding:7px 15px; }
+  .room-detail-form label { font-size:.95rem; color:#5A89B0; font-weight:500; margin-bottom:2px; display:block; }
+  .room-detail-form input[type="text"], .room-detail-form input[type="number"], .room-detail-form select {
+    width:98%; padding:8px 12px; border:1px solid #C7D5EA; border-radius:5px; font-size:.99rem; background:#F5F8FB; margin-bottom:13px; outline:none; box-sizing:border-box; transition:border 0.17s;
+  }
+  .room-detail-form input:focus, .room-detail-form select:focus { border-color:#2176AE; }
+  .room-detail-form .inline-btns { margin-top:11px; }
+  .primary-btn, .secondary-btn {
+    padding:9px 24px; font-size:.99rem; font-weight:600; border-radius:5px; border:none; cursor:pointer; letter-spacing:0.6px; margin-right:7px;
+  }
+  .primary-btn { background:#2176AE; color:#fff; }
+  .primary-btn:hover { background:#17456B; }
+  .secondary-btn { background:#E1ECFF; color:#2176AE; }
+  .secondary-btn:hover { background:#D2EBFF; }
+  .divider { border:0; border-top:1px solid #C7D5EA; margin:25px 0; }
+  .roomtype-section { margin-top:17px; background:#F5F8FB; border-radius:7px; padding:16px 16px 11px 16px; }
+  .roomtype-title { font-weight:600; color:#17456B; margin-bottom:7px; font-size:1.08rem; }
+  .roomtype-list, .roomtype-edit { display:inline-block; vertical-align:top; margin-right:9px; }
+  .roomtype-list select {
+    width:162px; min-width:110px; padding:7px 9px; border:1px solid #C7D5EA; border-radius:5px; }
+  .roomtype-edit input[type="text"] {
+    width:125px; min-width:90px; padding:7px 9px; border:1px solid #C7D5EA; border-radius:5px;
+  }
+  @media (max-width:900px) {
+    .split-2 { flex-direction:column; gap:11px; }
+    .main-content { padding:19px 7px; }
+    .room-detail-form { min-width:0; }
+  }
+</style>
+</head>
+<body>
+<div class="navbar">Hotel Booking System</div>
+<div class="main-content">
+  <div class="section-title">Room Management</div>
+  <div class="split-2">
+    <div class="room-list">
+      <div class="room-list-title">Inventory</div>
+      <table class="room-table">
+        <thead>
+        <tr>
+          <th>#</th>
+          <th>Short Name</th>
+          <th>Type</th>
+          <th>Status</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="selected">
+          <td>1</td>
+          <td>101</td>
+          <td>Deluxe</td>
+          <td class="status-free">Free</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>102</td>
+          <td>Deluxe</td>
+          <td class="status-occupied">Occupied</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>210</td>
+          <td>Standard</td>
+          <td class="status-housekeeping">Housekeeping</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>305</td>
+          <td>Standard</td>
+          <td class="status-maintenance">Maintenance</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>202</td>
+          <td>Suite</td>
+          <td class="status-free">Free</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <form class="room-detail-form" autocomplete="off">
+      <label for="roomShortName">Short Name</label>
+      <input type="text" id="roomShortName" name="roomShortName" value="101" required>
+      <label for="roomLongName">Long Name</label>
+      <input type="text" id="roomLongName" name="roomLongName" value="Room 101, 2/F East" required>
+      <label for="roomType">Room Type</label>
+      <select id="roomType" name="roomType">
+        <option selected>Deluxe</option>
+        <option>Standard</option>
+        <option>Suite</option>
+      </select>
+      <label for="roomLocation">Location</label>
+      <input type="text" id="roomLocation" name="roomLocation" value="2/F East">
+      <label for="roomPrice">Standard Price</label>
+      <input type="number" id="roomPrice" name="roomPrice" min="50" max="3000" value="800">
+      <label for="roomStatus">Current Status</label>
+      <select id="roomStatus" name="roomStatus">
+        <option class="status-free" selected>Free</option>
+        <option class="status-occupied">Occupied</option>
+        <option class="status-housekeeping">Housekeeping</option>
+        <option class="status-maintenance">Maintenance</option>
+      </select>
+      <div class="inline-btns">
+        <button class="primary-btn">Save</button>
+        <button class="secondary-btn" type="reset">Reset</button>
+      </div>
+    </form>
+  </div>
+  <hr class="divider">
+  <div class="roomtype-section">
+    <div class="roomtype-title">Room Type Management</div>
+    <span class="roomtype-list">
+      <label for="roomTypeList">Existing Types</label>
+      <select id="roomTypeList" name="roomTypeList">
+        <option value="Deluxe" selected>Deluxe</option>
+        <option value="Standard">Standard</option>
+        <option value="Suite">Suite</option>
+      </select>
+    </span>
+    <span class="roomtype-edit">
+      <label for="roomTypeShort">Short Name</label> <input type="text" id="roomTypeShort" value="Deluxe">
+      <label for="roomTypeLong">Long Name</label> <input type="text" id="roomTypeLong" value="Deluxe Room">
+    </span>
+    <button class="primary-btn" style="margin-top:23px;">Save Type</button>
+    <button class="secondary-btn" style="margin-top:23px;">Add New Type</button>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hotel Booking System - Login</title>
+  <style>
+    body {
+      background: #F5F8FB;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      color: #33404C;
+    }
+    .login-container {
+      width: 370px;
+      margin: 80px auto 0 auto;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 24px #C7D5EA44;
+      padding: 38px 36px 28px 36px;
+    }
+    .login-logo {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: #17456B;
+      margin-bottom: 24px;
+    }
+    .login-form label {
+      font-size: 1rem;
+      color: #33404C;
+      display: block;
+      margin-bottom: 7px;
+      margin-top: 14px;
+    }
+    .login-form input[type="text"],
+    .login-form input[type="password"] {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #C7D5EA;
+      border-radius: 5px;
+      font-size: 1rem;
+      background: #F5F8FB;
+      margin-bottom: 3px;
+      outline: none;
+      box-sizing: border-box;
+      transition: border 0.17s;
+    }
+    .login-form input[type="text"]:focus,
+    .login-form input[type="password"]:focus {
+      border-color: #17456B;
+    }
+    .login-form .submit-btn {
+      display: block;
+      width: 100%;
+      padding: 12px 0;
+      margin-top: 20px;
+      border: none;
+      background: linear-gradient(90deg, #2176AE 60%, #17456B 100%);
+      color: #fff;
+      font-weight: 600;
+      font-size: 1.05rem;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0 2px 8px #17456B10;
+      letter-spacing: 0.2px;
+      transition: background 0.2s;
+    }
+    .login-form .submit-btn:hover {
+      background: linear-gradient(90deg, #17456B, #2176AE 80%);
+    }
+    .login-form .change-password {
+      margin-top: 30px;
+      text-align: center;
+    }
+    .login-form .change-password a {
+      color: #2176AE;
+      text-decoration: none;
+      font-size: 0.98rem;
+      font-weight: 500;
+      transition: color 0.15s;
+    }
+    .login-form .change-password a:hover {
+      color: #17456B;
+      text-decoration: underline;
+    }
+    .login-form .alert {
+      margin: 15px 0;
+      background: #FFDFE1;
+      border-left: 4px solid #C71F37;
+      color: #C71F37;
+      border-radius: 5px;
+      padding: 11px 16px;
+      font-size: 0.99rem;
+      letter-spacing: 0.07px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-logo">Hotel Booking System</div>
+    <form class="login-form">
+      <div class="alert" id="loginError">Invalid user ID or password. Please try again.</div>
+      <label for="userid">User ID</label>
+      <input type="text" id="userid" name="userid" placeholder="Enter your User ID" autocomplete="username" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" autocomplete="current-password" required>
+
+      <button type="submit" class="submit-btn">Sign In</button>
+      <div class="change-password">
+        <a href="#">Forgot Password?</a>
+      </div>
+    </form>
+  </div>
+  <script>
+    // For design demo purposes only
+    document.querySelector('.login-form').onsubmit = function(e) {
+      e.preventDefault();
+      document.getElementById('loginError').style.display = 'block';
+    };
+  </script>
+</body>
+</html>

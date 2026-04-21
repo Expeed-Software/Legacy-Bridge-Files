@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Booking Management | Hotel Booking System</title>
+<style>
+  body { background: #F5F8FB; font-family: 'Segoe UI', Arial, sans-serif; color: #28384A; margin:0; }
+  .navbar { background: #17456B; color: #fff; height: 54px; display: flex; align-items: center; padding-left: 28px; font-weight:600; font-size:1.09rem; }
+  .main-content { max-width: 880px; margin: 30px auto 0 auto; background:#fff; border-radius:9px; box-shadow:0 2px 12px #D8E3F649; padding:38px 48px 40px 48px; }
+  .section-title { font-size:1.32rem; font-weight:600; color:#17456B; margin-bottom:20px; letter-spacing:1px; }
+  .booking-form { display: flex; flex-wrap: wrap; gap:38px; }
+  .form-col { flex:1 1 300px; min-width:300px; }
+  label { font-size:1rem; font-weight:500; margin-bottom: 4px; display: block; color: #5A89B0; letter-spacing:0.1px; }
+  input[type="text"], input[type="number"], select, textarea, input[type="date"] {
+    width: 97%;
+    padding: 9px 12px;
+    border: 1px solid #C7D5EA;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #F5F8FB;
+    margin-bottom: 14px;
+    outline: none;
+    box-sizing: border-box;
+    transition: border 0.18s;
+  }
+  input:focus, select:focus, textarea:focus {
+    border-color: #2176AE;
+  }
+  textarea { resize: vertical; min-height:50px; }
+  .totals-box { background:#F5F8FB; border-radius:6px; padding:15px 22px; margin-top:9px; box-sizing:border-box; }
+  .totals-box label { margin-bottom:2px; }
+  .totals-row { display:flex; justify-content:space-between; margin-bottom:6px; font-size:1.04rem; }
+  .totals-label { color:#2176AE; }
+  .totals-value { font-weight:600; }
+  .btn-row { margin-top:36px; display:flex; gap:16px; }
+  .primary-btn, .danger-btn, .secondary-btn {
+    padding:12px 33px; font-size:1rem; font-weight:600; border-radius:5px; border:none; cursor:pointer; transition:background 0.15s; letter-spacing:0.1px;
+  }
+  .primary-btn { background:linear-gradient(85deg, #2176AE 70%, #17456B 100%); color:#fff; }
+  .primary-btn:hover { background:linear-gradient(85deg, #17456B 80%, #2176AE 100%); }
+  .danger-btn { background:#FFDFE1; color:#C71F37; }
+  .danger-btn:hover { background:#FFE8EF; }
+  .secondary-btn { background:#E1ECFF; color:#2176AE; }
+  .secondary-btn:hover { background:#D2EBFF; }
+  .divider { border:0; border-top:1px solid #C7D5EA; margin:32px 0 28px 0; }
+  @media (max-width:700px) {
+    .main-content { padding:20px 10px; }
+    .booking-form { flex-direction:column; gap:12px; }
+    .form-col { min-width:0; }
+  }
+</style>
+</head>
+<body>
+<div class="navbar">Hotel Booking System</div>
+<div class="main-content">
+  <div class="section-title">Booking Management</div>
+  <form class="booking-form">
+    <div class="form-col">
+      <label for="guestName">Guest Name</label>
+      <input type="text" id="guestName" name="guestName" placeholder="Full name" required value="Jack Li">
+
+      <label for="guestPassport">Passport No.</label>
+      <input type="text" id="guestPassport" name="guestPassport" placeholder="Passport Number" value="KQ0224628">
+
+      <label for="guestContact">Contact No.</label>
+      <input type="text" id="guestContact" name="guestContact" placeholder="Phone number" value="+852 9123 2377">
+
+      <label for="guestOrigin">Country / Origin</label>
+      <select id="guestOrigin" name="guestOrigin">
+        <option>Hong Kong</option>
+        <option selected>China</option>
+        <option>Singapore</option>
+        <option>Other</option>
+      </select>
+    </div>
+    <div class="form-col">
+      <label for="roomNo">Room No.</label>
+      <select id="roomNo" name="roomNo">
+        <option>101 - Deluxe</option>
+        <option>102 - Deluxe</option>
+        <option>202 - Suite</option>
+        <option selected>210 - Standard</option>
+        <option>307 - Standard</option>
+      </select>
+
+      <label for="stayDuration">Stay Duration (nights)</label>
+      <input type="number" id="stayDuration" name="stayDuration" min="1" max="30" value="2">
+
+      <label for="totalGuest">No. of Guests</label>
+      <input type="number" id="totalGuest" name="totalGuest" min="1" max="8" value="1">
+
+      <label for="checkin">Check-in Date</label>
+      <input type="date" id="checkin" name="checkin" value="2026-06-12">
+
+      <label for="checkout">Check-out Date</label>
+      <input type="date" id="checkout" name="checkout" value="2026-06-14">
+    </div>
+    <div class="form-col">
+      <label for="remarks">Remarks</label>
+      <textarea id="remarks" name="remarks" placeholder="Remarks">Early check-in requested</textarea>
+      <div class="totals-box">
+        <div class="totals-row">
+          <span class="totals-label">Subtotal</span>
+          <span class="totals-value">$1,600.00</span>
+        </div>
+        <div class="totals-row">
+          <span class="totals-label">Deposit</span>
+          <span class="totals-value">$400.00</span>
+        </div>
+        <div class="totals-row">
+          <span class="totals-label">Paid</span>
+          <span class="totals-value">$1,000.00</span>
+        </div>
+        <div class="totals-row">
+          <span class="totals-label">Refund</span>
+          <span class="totals-value">$0.00</span>
+        </div>
+      </div>
+    </div>
+  </form>
+  <div class="btn-row">
+    <button class="primary-btn">Check In</button>
+    <button class="secondary-btn">Print Receipt</button>
+    <button class="danger-btn">Void Booking</button>
+  </div>
+  <hr class="divider">
+  <div style="font-size:0.95rem; color:#8CA9C9;">Created by: <b>Anna Mak</b> | Last modified by: <b>John Smith</b> | Last update: 2026-06-11 13:47</div>
+</div>
+</body>
+</html>
