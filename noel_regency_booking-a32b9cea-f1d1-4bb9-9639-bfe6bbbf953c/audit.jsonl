@@ -117,3 +117,4 @@
 {"ts":"2026-04-21T09:07:55.4343724Z","step":"analysis","level":"info","msg":"edgeCases pass complete \u2014 181 findings","meta":null}
 {"ts":"2026-04-21T09:07:55.4460801Z","step":"analysis","level":"info","msg":"ghostLogic pass complete \u2014 0 findings","meta":null}
 {"ts":"2026-04-21T09:07:55.4552403Z","step":"analysis","level":"info","msg":"Analysis complete \u2014 1 files analysed","meta":null}
+{"ts":"2026-04-21T09:08:08.2656250Z","step":"analysis","level":"info","msg":"Analysis started","meta":null}
