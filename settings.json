@@ -1,0 +1,15 @@
+{
+  "minimumZ3Score": 95,
+  "llms": [
+    {
+      "id": "2e3482c5-8472-42f6-9a7b-41e5a442a2c7",
+      "name": "Open A",
+      "provider": "openai",
+      "endpoint": "https://api.openai.com/v1",
+      "apiKey": "Something",
+      "model": "GPT-5.0",
+      "deploymentName": null,
+      "apiVersion": null
+    }
+  ]
+}
